@@ -1,0 +1,171 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  /* background-image: linear-gradient(
+    #167c9d,
+    #74cddd 
+  ); */
+  background-image: url("./components/img/sky-dark.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  padding: 8px;
+  font-size: 1em;
+}
+
+.glass-container, .card-container {
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.glass-container {
+  background-color: rgba(255, 255, 255, .10); 
+  backdrop-filter: blur(30px);
+  color: rgb(255, 255, 255);
+}
+
+.card-container {
+  background: white;
+}
+
+.weather-app {
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+/******SEARCH BAR**********/
+
+.search-form {
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  width: fit-content;  
+}
+
+.search-form input {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  min-width: 100px;
+}
+
+.search-form input::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.search-form button {
+  outline: none;
+  background: none;
+  border: none;
+  width: 30px;
+  height: 100%;
+  padding-top: 3px;
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+  
+}
+
+/******CURRENT WEATHER**********/
+
+.current-weather {
+  padding: 20px;
+  /* color: #2a273f; */
+  color: white;
+}
+
+.current-weather .time {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.current-weather .temp {
+  margin: 10px 0;
+  font-weight: 60px;
+}
+
+/******WEATHER FORECAST**********/
+
+.forecast {
+  transition: background-color 200ms linear;
+}
+
+.forecast:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.forecast .day {
+  text-transform: uppercase;
+}
+
+.max-temp {
+  color: rgb(255, 238, 0);
+}
+
+.min-temp {
+  color: rgb(255, 196, 0);
+}
+
+.forecast:not(:last-child){
+  margin-right: 1.5px;
+}
+
+.forecast .rain {
+  color: #94baff
+}
+
+
+/******WEATHER DETAILS**********/
+
+.weather-detail * {
+  margin: 0;  
+}
+
+.weather-detail .icon {
+  font-size: 30px;
+}
+
+.weather-detail {
+  padding: 20px;
+  background-color: rgba(19, 0, 27, 0.7); 
+  color: white;
+}
+.weather-detail td:nth-child(2n) {
+  text-align: right;
+}
+
+.weather-detail table td {
+  color: lightgray;
+}
+
+.weather-detail button {
+  height: 50px;
+  width: 50px;
+  background: rgb(159, 31, 170);
+  border-radius: 25px;
+}
+
+.weather-detail button:hover {
+  background: rgb(194, 53, 207);
+  box-shadow: 0px 0px 10px rgb(231, 89, 236);
+}
+
+/******FORECAST**********/
+
+
+
+
+/******WEATHER ICONS**********/

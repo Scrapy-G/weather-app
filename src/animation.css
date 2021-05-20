@@ -1,0 +1,25 @@
+.node {
+    overflow: hidden;
+}
+
+.node-enter {
+    opacity: 0;
+    max-height: 0;
+  }
+  
+  .node-enter-active {
+    transition: max-height 400ms ease-out, opacity 400ms ease-out;
+    opacity: 1;
+    max-height: 500px;
+  }
+  
+  .node-exit {
+    opacity: 1;
+    max-height: 500px;
+  }
+  
+  .node-exit-active {
+    transition: max-height 400ms ease-out, opacity 400ms ease-out;
+    opacity: 0;
+    max-height: 0;
+  }
