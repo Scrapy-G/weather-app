@@ -1,3 +1,9 @@
+A react weather application that looks up weather data by city name. 
+Uses opencagedata API for geocoding and open-weather-api for fetching weather data.
+
+![image](https://user-images.githubusercontent.com/55061028/119028777-dcb39180-b975-11eb-9109-850e81cd706d.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
