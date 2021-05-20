@@ -47,7 +47,7 @@ export default function SearchForm({ changeCity = f => f}) {
         <input 
           {...input}
           type='text' 
-          placeholder='Country' 
+          placeholder='City' 
         />
         <button type='submit'><BiSearch /></button>
       </form>
