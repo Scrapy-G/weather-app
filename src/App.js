@@ -8,7 +8,7 @@ import 'open-weather-icons/dist/css/open-weather-icons.css';
 
 function App() {
 
-  const weatherKey = 'c30407bfed95af238f9d09c1922f692a';
+  const weatherKey = 'YOUR OPEN-WEATHER-API KEY HERE';
   const [city, setCity] = useState({name: 'Montego Bay', lat: 18.476223, lng: -77.893890});
   const { loading, data, error } = useFetch(
     `https://api.openweathermap.org/data/2.5/onecall?lat=${city.lat}&lon=${city.lng}&exclude=hourly,minutely&units=metric&appid=${weatherKey}`
