@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function SearchForm({ changeCity = f => f}) {
 
-  const geoKey = 'a8ae3ebf115f44ce88a29d72586e759a'; 
+  const geoKey = 'YOUR OPEN-CAGE-DATA KEY HERE'; 
   const [input, setInput] = useInput('');
   const [message, setMessage] = useState('');
 
